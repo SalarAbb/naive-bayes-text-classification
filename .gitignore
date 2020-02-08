@@ -1,6 +1,9 @@
 # ignore these folders
 dev/
 train/
+train_10/
+*.txt
+*.pdf
 saved_models/
 models/
 *.zip

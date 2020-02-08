@@ -1,29 +1,34 @@
 Assignment 1 Report
 
-Name:
+Name: Hamidreza Abbaspourazad
 
 1. Performance on the development data with 100% of the training data
-1a. spam precision:
-1b. spam recall: 
-1c. spam F1 score: 
-1d. ham precision:
-1e. ham recall: 
-1f. ham F1 score:
+1a. spam precision: 0.9890
+1b. spam recall: 0.9627
+1c. spam F1 score: 0.9757
+1d. ham precision: 0.9143
+1e. ham recall: 0.9740
+1f. ham F1 score: 0.9432
 
 2. Performance on the development data with 10% of the training data
-2a. spam precision:
-2b. spam recall: 
-2c. spam F1 score: 
-2d. ham precision:
-2e. ham recall: 
-2f. ham F1 score:
+2a. spam precision: 0.9791
+2b. spam recall: 0.8938
+2c. spam F1 score: 0.9345
+2d. ham precision: 0.7857
+2e. ham recall: 0.9533
+2f. ham F1 score: 0.8614
 
 3. Description of enhancement(s) you tried (e.g., different approach(es) to smoothing, treating common words differently, dealing with unknown words differently):
 
+For this task, I tried two things. First, I removed all special characters from my analysis, meaning in the stage of learning and in the stage of classifying they were all ignored. Second, I tried removing 
+both special characters and numbers from my analysis. Second case (removing special characters and numbers only) did not change the results in 1 significantly, for a matter of fact percision of spam increased
+but percision of ham decreased, but f-scores did not change much. However, the first case, Increased my results a little bit. I think the reason was usually spam emails contain more
+numbers compared to ham emails, so knowing numbers were more helpful than special characters.
+
 4. Best performance results based on enhancements. Note that these could be the same or worse than the standard implementation.
-4a. spam precision:
-4b. spam recall: 
-4c. spam F1 score: 
-4d. ham precision:
-4e. ham recall: 
-4f. ham F1 score:
+4a. spam precision: 0.9927
+4b. spam recall: 0.9668
+4c. spam F1 score: 0.9796
+4d. ham precision: 0.9236
+4e. ham recall: 0.9827
+4f. ham F1 score: 0.9521
